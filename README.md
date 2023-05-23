@@ -3,8 +3,6 @@ Example code for auto updater electron-react-boilerplate project with nexus repo
 
 
 ## Research logs
-https://github.com/denitiawan/research-electron-react-boilerplate-autoupdater/tree/main/research-logs
-
-
+https://github.com/denitiawan/research-electron-react-boilerplate-autoupdater/blob/main/research-logs/readme.md
 
 
