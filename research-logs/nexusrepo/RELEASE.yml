@@ -1,0 +1,8 @@
+version: 1.4.19-RELEASE
+files:
+  - url: NexPOS Setup 1.4.19-RELEASE.exe
+    sha512: kbVd3Y4NwB8ia0jgbP2i+kws6ECavMP8h83BMCJdT6eD/Kg8b8rB633gXppAVTQQpYiPufgny4b+rkJfawZn/g==
+    size: 100298054
+path: NexPOS Setup 1.4.19-RELEASE.exe
+sha512: kbVd3Y4NwB8ia0jgbP2i+kws6ECavMP8h83BMCJdT6eD/Kg8b8rB633gXppAVTQQpYiPufgny4b+rkJfawZn/g==
+releaseDate: '2022-11-07T09:23:31.270Z'
