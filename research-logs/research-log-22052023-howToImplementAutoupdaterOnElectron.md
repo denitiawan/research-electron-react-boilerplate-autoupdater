@@ -13,6 +13,7 @@
 - https://github.com/electron-react-boilerplate/electron-react-boilerplate
 - https://github.com/Appsilon/mbaza/issues/56
 - https://github.com/electron-userland/electron-builder/issues/3227
+- https://github.com/electron-react-boilerplate/electron-react-boilerplate/issues/1339
 ## librarries
 ```
 npm i electron-updater
