@@ -8,5 +8,6 @@
 npm run package
 ```
 
-# 
-- 
+# Folder location
+- root/release/build
+
