@@ -10,7 +10,7 @@ npm run package
 
 ## Exe folder location
 - root/release/build
-- ![image](https://github.com/denitiawan/research-electron-react-boilerplate-autoupdater/assets/11941308/ff1936f7-9d23-41d5-a853-9cbc0d190926)
+- ![image](https://github.com/denitiawan/research-electron-react-boilerplate-autoupdater/assets/11941308/9ebe4074-f5d8-43aa-b944-6da8f889eed5)
 
 ## App Version Change
 - root/release/app/package.json
