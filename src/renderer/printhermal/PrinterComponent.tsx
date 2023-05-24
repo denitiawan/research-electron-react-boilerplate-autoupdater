@@ -10,9 +10,7 @@ export default function PrinterComponent() {
 
   return (
     <div>
-
-      <h2>App Version : 0.0.1</h2>
-      <br/>      
+  
 
       <button type="button" onClick={() => doTestPrinter80()}>
         Test Printer 80mm

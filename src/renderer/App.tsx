@@ -3,14 +3,17 @@ import './App.css';
 import { MemoryRouter as Router, Route, Routes } from 'react-router-dom';
 
 import PrinterComponent from './printhermal/PrinterComponent';
+import AutoUpdaterComponent from './autoupdater/AutoUpdaterComponent';
 
 function Hello() {
   return (
     <div>      
-      <h1>Electron React Boilerplate</h1>      
-      <h2>Electron Version : v4.6.0</h2>
+      <h1>Electron Updater</h1>            
+      <h2>App Version : 0.0.1</h2>
+      <br/>    
       <br/>            
       <PrinterComponent />            
+      <AutoUpdaterComponent />         
       
   </div>
   );
