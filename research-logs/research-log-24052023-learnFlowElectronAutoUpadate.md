@@ -3,7 +3,7 @@
 |Date|Assign|
 |--|--|
 |24-mei-2023|[Deni Setiawan](https://github.com/denitiawan)|
-# Learn flow electron auto update
+# Issue autoupdater will installed new application from official electron github
 
 ## Autoupdate notification will showing on bottom right when application success installed
 ![image](https://github.com/denitiawan/research-electron-react-boilerplate-autoupdater/assets/11941308/9f711398-8153-4390-8543-6c73b9d5dde2)
