@@ -9,7 +9,7 @@ export default function AutoUpdaterComponent() {
     <div>
       <br />                 
       <button type="button" onClick={() => doUpdate()}>
-        Update App
+        Quit And Install New Version
       </button>
       <br />   
           

@@ -1,5 +1,5 @@
 /* eslint global-require: off, no-console: off, promise/always-return: off */
-import { app, BrowserWindow, ipcMain, shell } from 'electron';
+import { app, BrowserWindow, ipcMain, shell,globalShortcut } from 'electron';
 import log from 'electron-log';
 import { autoUpdater } from 'electron-updater';
 import path from 'path';
@@ -7,24 +7,14 @@ import path from 'path';
 import MenuBuilder from './menu';
 import { resolveHtmlPath } from './util';
 
-/**
- * This module executes inside of electron's main process. You can start
- * electron renderer process from here and communicate with the other processes
- * through IPC.
- *
- * When running `npm run build` or `npm run build:main`, this file is compiled to
- * `./src/main.js` using webpack. This gives us some performance wins.
- */
 
-class AppUpdater {
-  constructor() {
-    log.transports.file.level = 'info';
-    autoUpdater.logger = log;
-    autoUpdater.checkForUpdatesAndNotify();
-  }
-}
+
 
 let mainWindow: BrowserWindow | null = null;
+
+
+
+
 
 
 ipcMain.on('ipc-escpos-printer-80', async () => {
@@ -199,6 +189,26 @@ const installExtensions = async () => {
     .catch(console.log);
 };
 
+
+// AUTO UPDATER ---------------[START]-----
+/**
+ * flow autoupdate : auto download and auto installed newest version on local
+ * - download app in background
+ * - notify when download is completed
+ * - auto install app when user quit the old app
+ * - when user re run the app, app will show the newest feature
+ */
+class AutoDownloadAndAutoInstallApp {
+  constructor() {
+    log.transports.file.level = 'info';
+    autoUpdater.logger = log;
+    autoUpdater.checkForUpdatesAndNotify();
+  }
+}
+
+// AUTO UPDATER ---------------[END]-----
+
+
 const createWindow = async () => {
   if (isDebug) {
     await installExtensions();
@@ -223,6 +233,11 @@ const createWindow = async () => {
         : path.join(__dirname, '../../.erb/dll/preload.js'),
     },
   });
+
+   // SHORTCUT UNTUK INSPEC ELEMENT [START]
+   globalShortcut.register('CommandOrControl+G', function () {
+    mainWindow.toggleDevTools();
+  })
 
   mainWindow.loadURL(resolveHtmlPath('index.html'));
 
@@ -252,12 +267,53 @@ const createWindow = async () => {
 
   // Remove this if your app does not use auto updates
   // eslint-disable-next-line
-  new AppUpdater();
+  
+  new AutoDownloadAndAutoInstallApp();
 };
 
+
+
+
+ // AUTO UPDATER ---------------[START]---
+ 
+ /**
+   - autoUpdater.checkForUpdates()
+   - https://www.electronjs.org/docs/latest/api/auto-updater#autoupdatercheckforupdates
+    
+    Asks the server whether there is an update. 
+    You must call setFeedURL before using this API.
+    Note: If an update is available it will be downloaded automatically. 
+    Calling autoUpdater.checkForUpdates() twice will download the update two times.        
+  */
+//  app.on('ready', function () {        
+//   autoUpdater.checkForUpdates();
+// });
+
+
+
+
 /**
- * Add event listeners...
+ - autoUpdater.quitAndInstall()
+ - https://www.electronjs.org/docs/latest/api/auto-updater#autoupdaterquitandinstall
+ Restarts the app and installs the update after it has been downloaded. 
+ It should only be called after update-downloaded has been emitted.
+ Under the hood calling autoUpdater.quitAndInstall() will close all 
+ application windows first, and automatically call app.quit() after all windows 
+ have been closed.
+ Note: It is not strictly necessary to call this function to apply an update,
+ as a successfully downloaded update will always be applied the next time
+ the application starts.
+
+ close app and auto install new version
+ source : C:\Users\<computername>\AppData\Local\<productname>-updater\pending
  */
+// ipcMain.on('quitAndInstall', async () => {
+//   console.log("quitAndInstall")
+//   autoUpdater.quitAndInstall();
+// });
+
+
+// AUTO UPDATER ---------------[END]-----
 
 app.on('window-all-closed', () => {
   // Respect the OSX convention of having the application in memory even
@@ -278,3 +334,5 @@ app
     });
   })
   .catch(console.log);
+
+ 

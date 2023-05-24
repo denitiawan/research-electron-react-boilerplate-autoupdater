@@ -8,7 +8,7 @@ import AutoUpdaterComponent from './autoupdater/AutoUpdaterComponent';
 function Hello() {
   return (
     <div>      
-      <h1>Electron Updater</h1>            
+      <h1>Electron AutoUpdate</h1>            
       <h2>App Version : 0.0.1</h2>
       <br/>    
       <br/>            
