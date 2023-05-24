@@ -32,7 +32,7 @@ root/package.json
 root/release/app/package.json
 --------------------------------
 {
-  "name": "electron-react-boilerplate",
+  "name": "electron-updater",
   "version": "0.0.2",
   "description": "A foundation for scalable desktop apps",
   
