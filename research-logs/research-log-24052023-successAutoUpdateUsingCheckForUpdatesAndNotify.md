@@ -39,10 +39,20 @@ npm i auto-updater@1.0.2
 
 ```
 ## Nexus Repository
+### Credentials
+```
+user         : *****
+password     : *****
+nexus download url : https://*****
+```
+### Nexus
 ![image](https://github.com/denitiawan/research-electron-react-boilerplate-autoupdater/assets/11941308/8aec984a-e8f2-4609-bbde-16f8fa777f2b)
 ![image](https://github.com/denitiawan/research-electron-react-boilerplate-autoupdater/assets/11941308/99e3a800-075e-4546-b14b-6cc02a7c433d)
 
-## Setup Autoupdater on Electron Project
+
+## Setup AutoUpdater on Electron Project
+
+
 
 
 
