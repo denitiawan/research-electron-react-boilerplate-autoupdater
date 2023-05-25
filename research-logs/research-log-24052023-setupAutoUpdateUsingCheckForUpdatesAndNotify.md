@@ -156,6 +156,8 @@ npm run package
 
 ## Autoupdate will auto running
 
+![image](https://github.com/denitiawan/research-electron-react-boilerplate-autoupdater/assets/11941308/b77755cc-7407-4da3-8265-9297be56f4b3)
+![image](https://github.com/denitiawan/research-electron-react-boilerplate-autoupdater/assets/11941308/bd763626-722c-464f-b090-9496f080479d)
 
 
 
