@@ -7,6 +7,8 @@ Example code for auto upadate [electron-react-boilerplate project]() using [auto
 
 
 ## Sequence Diagram Electron Auto Update with Nexsus Repository Server
+![image](https://github.com/denitiawan/research-electron-react-boilerplate-autoupdater/assets/11941308/f0984944-25bb-4607-9e96-a7aa7addaa3e)
+
 
 
 
