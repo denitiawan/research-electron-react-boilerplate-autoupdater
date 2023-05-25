@@ -4,7 +4,10 @@
 |--|--|
 |24-mei-2023|[Deni Setiawan](https://github.com/denitiawan)|
 |25-mei-2023|[Deni Setiawan](https://github.com/denitiawan)|
-# Setup Electron auto update using .checkForUpdatesAndNotify
+# Setup Electron auto update using autoupdater.checkForUpdatesAndNotify()
+```
+This auto updater using AutoUpdater librarry and using autoupdater.checkForUpdatesAndNotify() function
+```
 
 ## Overviews
 - [Autoupdate Cycle](#autoupdate-cycle)
@@ -70,6 +73,7 @@ npm i auto-updater@1.0.2
 ```
 
 ## Setup root/package.json
+### Setup URL Nexsus repository
 - open `root/package.json` file
 - add url nexus on this section
 ```
@@ -78,11 +82,30 @@ npm i auto-updater@1.0.2
       "url": "<url nexus repository here>"     
     }
 ```
-- save file
 
+### Setup productName & appId
+- Setup `productName` 
+```
+productName : this property for given product name and will showing when build the .exe
+```
+- Setup `appId` 
+```
+appId : this property for given product id and must be unique
+```
+- following example code like this
+```
+....
+....
+"build": {
+    "productName": "ElectronAutoUpdate",
+    "appId": "org.erb.ElectronAutoUpdate",
+    ....
+    ....
+```
+- save root/package.json file
 
 ## Setup main.ts
-- open `root/src/main/main.ts`
+- open `root/src/main/main.ts` file
 - create class `AutoDownloadAndAutoInstallApp`
 ```
 import { autoUpdater } from 'electron-updater';
@@ -110,6 +133,28 @@ const createWindow = async () => {
 - save file
 
 ## Setup root/release/app/package.json
+- open `root/release/app/package.json` file
+- setup `name` & `version` 
+```
+{
+  "name": "electron-autoupdate",
+  "version": "0.0.1",
+....  
+....
+....
+```
+- save file
+
+## Build application
+- build .exe file with this command
+```
+npm run package
+```
+
+## Install Application
+- install application from folder `root/release/build/***.exe`
+
+## Autoupdate will auto running
 
 
 
