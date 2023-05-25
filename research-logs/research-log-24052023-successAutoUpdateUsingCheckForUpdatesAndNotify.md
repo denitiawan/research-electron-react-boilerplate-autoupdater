@@ -11,7 +11,7 @@
 - [Autoupdate Sequence](#autoupdate-sequence)
 - [Requirement](#requirement)
 - [Nexus Repository](#nexus-repository)
-- [Setup AutoUpdater on Electron Project](#setup-autoupdater-on-electron-project)
+- [Setup AutoUpdater on Electron Project](#setup-autoUpdater-on-electron-project)
 
 ## Autoupdate Cycle
 ![image](https://github.com/denitiawan/research-electron-react-boilerplate-autoupdater/assets/11941308/be2de108-537c-4f5a-996f-d1eec127bb6b)
@@ -50,8 +50,53 @@ nexus download url : https://*****
 ![image](https://github.com/denitiawan/research-electron-react-boilerplate-autoupdater/assets/11941308/99e3a800-075e-4546-b14b-6cc02a7c433d)
 
 
-## Setup AutoUpdater on Electron Project
+# Setup AutoUpdater on Electron Project
+## Install Librarry
+- open project
+- open terminal
+- run this command
+```
+npm i auto-updater@1.0.2
+```
 
+## Setup package.json
+- open `root/package.json` file
+- add url nexus on this section
+```
+    "publish": {
+      "provider": "generic",
+      "url": "<url nexus repository here>"     
+    }
+```
+- save file
+
+
+## Setup main.ts
+- open `root/src/main/main.ts`
+- create class `AutoDownloadAndAutoInstallApp`
+```
+import { autoUpdater } from 'electron-updater';
+
+class AutoDownloadAndAutoInstallApp {
+  constructor() {
+    log.transports.file.level = 'info';
+    autoUpdater.logger = log;
+    autoUpdater.checkForUpdatesAndNotify();
+  }
+}
+```
+
+- Implement and call `AutoDownloadAndAutoInstallApp` class on `createWindow` initialize
+- Put Implementation `AutoDownloadAndAutoInstallApp` class on bottom of line, like this
+```
+const createWindow = async () => {
+  ....
+  ....
+  ....
+  new AutoDownloadAndAutoInstallApp();
+};
+
+```
 
 
 
