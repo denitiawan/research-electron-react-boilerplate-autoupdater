@@ -210,7 +210,7 @@
     ],
     "publish": {
       "provider": "generic",
-      "url": " https://downloads.nexcloud.id/repository/nexpos-releases/rnd-nexpos/windows/latest/"     
+      "url": "url nexus repository here"     
     }
   },
   "collective": {
