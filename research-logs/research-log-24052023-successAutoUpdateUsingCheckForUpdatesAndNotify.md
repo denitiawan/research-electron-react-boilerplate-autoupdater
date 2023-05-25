@@ -30,6 +30,10 @@ npm version  : 8.5.0
 Repository  : https://github.com/electron-react-boilerplate/electron-react-boilerplate
 version     : v4.6.0 (Latest)
 
+-- Nexus Repository ------
+user & password (for create folder, upload file, delete file)
+url nexsus download files (this url will using on electron project when download .exe file or the latest version)
+
 -- Librarries ------------
 npm i auto-updater@1.0.2
 
