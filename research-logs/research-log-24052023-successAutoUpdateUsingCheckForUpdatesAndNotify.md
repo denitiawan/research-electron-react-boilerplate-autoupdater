@@ -39,12 +39,22 @@ npm i auto-updater@1.0.2
 
 ```
 ## Nexus Repository
-### Credentials
+### User & URL
 ```
 user         : *****
 password     : *****
 nexus download url : https://*****
 ```
+### Upload latest version
+- build  latest version electron app
+- upload files to electron
+```
+- ElectronAutoUpdate Setup.0.0.2.exe
+- ElectronAutoUpdate Setup.0.0.2.exe.blockmap
+- ND_VERSION.yml
+- latest.yml
+```
+
 ### Nexus
 ![image](https://github.com/denitiawan/research-electron-react-boilerplate-autoupdater/assets/11941308/8aec984a-e8f2-4609-bbde-16f8fa777f2b)
 ![image](https://github.com/denitiawan/research-electron-react-boilerplate-autoupdater/assets/11941308/99e3a800-075e-4546-b14b-6cc02a7c433d)
@@ -59,7 +69,7 @@ nexus download url : https://*****
 npm i auto-updater@1.0.2
 ```
 
-## Setup package.json
+## Setup root/package.json
 - open `root/package.json` file
 - add url nexus on this section
 ```
@@ -97,7 +107,9 @@ const createWindow = async () => {
 };
 
 ```
+- save file
 
+## Setup root/release/app/package.json
 
 
 
