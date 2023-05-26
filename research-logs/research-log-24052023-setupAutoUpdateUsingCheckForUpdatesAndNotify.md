@@ -38,7 +38,7 @@ user & password (for create folder, upload file, delete file)
 url nexsus download files (this url will using on electron project when download .exe file or the latest version)
 
 -- Librarries ------------
-npm i auto-updater@1.0.2
+npm i auto-updater@5.3.0
 
 ```
 ## Nexus Repository
