@@ -154,15 +154,19 @@ npm run package
 ## Install Application
 - install application from folder `root/release/build/***.exe`
 
-## Electron autoupdate will running
-- Download processing
-- ![image](https://github.com/denitiawan/research-electron-react-boilerplate-autoupdater/assets/11941308/b77755cc-7407-4da3-8265-9297be56f4b3)
+## Autoupdate Starting
+### Download processing
+![image](https://github.com/denitiawan/research-electron-react-boilerplate-autoupdater/assets/11941308/32c248ad-cf27-482f-864f-adaae6e38583)
 
-- Download completed
-- ![image](https://github.com/denitiawan/research-electron-react-boilerplate-autoupdater/assets/11941308/bd763626-722c-464f-b090-9496f080479d)
+### Download completed
+![image](https://github.com/denitiawan/research-electron-react-boilerplate-autoupdater/assets/11941308/b5acddfb-e30d-442b-a08a-4f68f1b309e2)
+![image](https://github.com/denitiawan/research-electron-react-boilerplate-autoupdater/assets/11941308/7f22bef0-7137-44d6-85c6-4426a5cbd52d)
 
-- Success install and replace old version wiht latest version
-- ![image](https://github.com/denitiawan/research-electron-react-boilerplate-autoupdater/assets/11941308/733cc15c-0d80-4fe6-b1c5-a312d12dbf13)
+### Success install and replace old version wiht latest version
+![image](https://github.com/denitiawan/research-electron-react-boilerplate-autoupdater/assets/11941308/6b3ebe81-dde7-4d7b-9c69-8e2ed82f8091)
+
+
+
 
 
 
