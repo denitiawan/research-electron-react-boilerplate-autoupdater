@@ -12,9 +12,7 @@ function Hello() {
       <h2>App Version : 0.0.1</h2>
       <br/>    
       <br/>            
-      <PrinterComponent />            
-      <AutoUpdaterComponent />         
-      
+      <PrinterComponent />                        
   </div>
   );
 }
