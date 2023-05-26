@@ -11,9 +11,7 @@ Example code for auto upadate [electron-react-boilerplate project]() using [auto
 
 
 ## Setup Autoupdate Electron
-https://github.com/denitiawan/research-electron-react-boilerplate-autoupdater/blob/main/research-logs/research-log-24052023-successAutoUpdateUsingCheckForUpdatesAndNotify.md
+https://github.com/denitiawan/research-electron-react-boilerplate-autoupdater/blob/main/research-logs/research-log-24052023-setupAutoUpdateUsingCheckForUpdatesAndNotify.md
 
 ## Research logs
 https://github.com/denitiawan/research-electron-react-boilerplate-autoupdater/blob/main/research-logs/readme.md
-
-
