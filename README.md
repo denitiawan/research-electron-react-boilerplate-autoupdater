@@ -1,7 +1,6 @@
 # What is this?
 Example code for auto upadate [electron-react-boilerplate project]() using [autoUpdater]() librarry, with NexusRepository as a server provider
 
-
 ## Cycle Electron Autoupdate
 ![image](https://github.com/denitiawan/research-electron-react-boilerplate-autoupdater/assets/11941308/be2de108-537c-4f5a-996f-d1eec127bb6b)
 
